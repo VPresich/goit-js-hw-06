@@ -23,7 +23,7 @@ const colorSpan = widget.querySelector(".color");
 
 changeColorBtn.addEventListener("click", () => {
   const randomColor = getRandomHexColor();
-  document.body.style.backgroundColor = randomColor;
+  document.querySelector('body').style.backgroundColor = randomColor;
   colorSpan.textContent = randomColor;
 });
 

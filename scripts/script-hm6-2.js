@@ -21,7 +21,7 @@ const ingredientsRef = document.querySelector("#ingredients");
 const makeIngredientRef = (ingredient) => {
   const listItemRef = document.createElement("li");
   listItemRef.textContent = ingredient;
-  listItemRef.classList.add("item");
+  listItemRef.classList.add("item-list");
   return listItemRef;
 };
 

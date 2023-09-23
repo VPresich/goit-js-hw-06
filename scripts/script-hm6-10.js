@@ -28,8 +28,8 @@ const refs = {
 
 refs.createButton.addEventListener('click', onCreateButtonClick);
 refs.destroyButton.addEventListener('click', onDestroyButtonClick);
-refs.createButton.classList.add('styled-btn');
-refs.destroyButton.classList.add('styled-btn');
+refs.createButton.classList.add('btn-styles');
+refs.destroyButton.classList.add('btn-styles');
 
 
 function createBoxes(amount) {

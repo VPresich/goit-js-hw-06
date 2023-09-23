@@ -29,7 +29,7 @@ const galleryRef = document.querySelector(".gallery");
 
 
 const imageMarkup = (image) => {
-  return `<li class="gallery-item list "><img class="gallery-img" src="${image.url}" alt="${image.alt}" width="300"></li>`;
+  return `<li class="gallery-item list "><img class="gallery-img" src="${image.url}" alt="${image.alt}" width="250"></li>`;
 }
 
 const imagesMarkup = images.map(imageMarkup).join(""); 
