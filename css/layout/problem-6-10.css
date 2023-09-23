@@ -7,9 +7,9 @@
   border: none;
   border-radius: 8px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  /* display: inline-flex;
+  display: inline-flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   padding-left: 18px;
   padding-right: 18px;
   width: 120px;
@@ -20,14 +20,15 @@
 
 #controls {
   margin: 0 auto;
-  width: 500px;
-  height: 100px;
+  width: 450px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border-radius: 8px;
+  align-items: baseline;
+  column-gap: 20px;
+  border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.08);
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 
 #input-number {
@@ -40,6 +41,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 16px;
 }
+
 .btn-styles:hover,
 .btn-styles:focus {
   background-color: var(--ocean);

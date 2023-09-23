@@ -8,14 +8,13 @@
 */
 
 const nameInputRef = document.querySelector("#name-input");
-const nameOutputRef = document.querySelector("#name-output");
+nameInputRef.addEventListener("input", onNameInput);
 
-nameInputRef.addEventListener("input", () => {
-  const inputValue = nameInputRef.value.trim();
-  nameOutputRef.textContent = inputValue !== "" ? inputValue : "Anonymous";
-});
-
-
+function onNameInput(event) {
+  const inputValue = event.currentTarget.value.trim();
+  const output = document.querySelector("#name-output");
+  output.textContent = inputValue !== "" ? inputValue : "Anonymous";
+}
 
 
 

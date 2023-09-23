@@ -27,24 +27,31 @@
 
 const loginForm = document.querySelector(".login-form");
 
-loginForm.addEventListener("submit", event => {
-  event.preventDefault(); // Зупиняємо стандартну поведінку відправки форми (перезавантаження сторінки)
+loginForm.addEventListener("submit", onSubmit);
+console.log(loginForm);
 
+function onSubmit(event) {
+  // Відміняємо стандартну поведінку відправки форми
+  event.preventDefault(); 
+
+  // Одержуємо дані з контролів форми, парсінг даних
   const formData = new FormData(event.currentTarget);
   const formDataObject = {};
-
   formData.forEach((value, name) => {
     formDataObject[name] = value;
   });
 
   if (formDataObject.email && formDataObject.password) {
-    console.log(formDataObject); // Виводимо об'єкт даних у консоль
-    loginForm.reset(); // Очищуємо значення полів форми
+    // Виводимо об'єкт даних у консоль
+    console.log(formDataObject);    
+    // Очищуємо значення полів форми
+    loginForm.reset(); 
   } 
   else {
-    alert("All fields must be filled!"); // Виводимо повідомлення, якщо є незаповнені поля
+    // Виводимо повідомлення, якщо є незаповнені поля
+    alert("All fields must be filled!"); 
   }
-});
+}
 
 
 
